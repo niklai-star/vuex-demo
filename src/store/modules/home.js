@@ -1,24 +1,24 @@
 const state = {
   count: 1
-};
+}
 
 const getters = {
   countToString: (state, getters, rootState) => {
-    return '第' + state.count + '个';
+    return '第' + state.count + '个'
   }
-};
+}
 
 const actions = {
   increment: ({ state, commit, rootState }) => {
-    commit('increment');
+    commit('increment')
   }
-};
+}
 
 const mutations = {
   increment: (state, rootState) => {
-    state.count++;
+    state.count++
   }
-};
+}
 
 export default {
   namespaced: true,
@@ -26,4 +26,4 @@ export default {
   getters,
   actions,
   mutations
-};
+}

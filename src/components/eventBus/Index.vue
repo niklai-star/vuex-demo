@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h1>props 和 $emit</h1>
+      <h1>EventBus</h1>
     </div>
     <grand-father />
   </div>

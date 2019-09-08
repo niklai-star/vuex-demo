@@ -1,18 +1,18 @@
 <template>
   <div>
     <div>
-      <h1>props 和 $emit</h1>
+      <h2>props 和 $emit</h2>
     </div>
-    <grand-father />
+    <grand-pa />
   </div>
 </template>
 
 <script>
-import GrandFather from './GrandFather'
+import GrandPa from './GrandPa'
 
 export default {
   components: {
-    GrandFather: GrandFather
+    GrandPa: GrandPa
   }
 }
 </script>

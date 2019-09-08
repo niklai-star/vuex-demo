@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h4>ChildB</h4>
+  <div class="demo-panel">
+    <h4 class="title">
+ChildB
+</h4>
   </div>
 </template>
 

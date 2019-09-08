@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import { createNamespacedHelpers } from "vuex";
-const { mapGetters, mapState } = createNamespacedHelpers("home");
+import { createNamespacedHelpers } from 'vuex'
+const { mapGetters, mapState } = createNamespacedHelpers('home')
 
 export default {
-  name: "Home",
+  name: 'Home',
   computed: {
-    ...mapState(["count"]),
-    ...mapGetters(["countToString"])
+    ...mapState(['count']),
+    ...mapGetters(['countToString'])
   },
   components: {},
   methods: {}
-};
+}
 </script>

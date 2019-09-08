@@ -1,11 +1,23 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    class="container-fluid"
+  >
     <div id="nav">
-      <router-link to="/">
-        Home
+      <router-link to="/propsandemit">
+        props 和 $emit
+      </router-link>|
+      <router-link to="/attrandlisterners">
+        $attrs 和 $listeners
+      </router-link>|
+      <router-link to="/eventbus">
+        EventBus
       </router-link>|
       <router-link to="/simple">
-        Simple
+        store 模式
+      </router-link>|
+      <router-link to="/vuex">
+        Vuex
       </router-link>
     </div>
     <router-view />

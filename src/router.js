@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Simple from './components/simple/Index.vue'
+import Simple from './components/simpleStore/Index.vue'
+import AttrsAndListeners from './components/attrsAndListeners/Index.vue'
+import EventBus from './components/eventBus/Index.vue'
+import PropsAndEmit from './components/propsAndEmit/Index.vue'
+import Vx from './components/vuex/Index.vue'
 
 Vue.use(Router)
 
@@ -15,17 +19,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/simple',
-      component: Simple
+      path: '/attrandlisterners',
+      component: AttrsAndListeners
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/eventbus',
+      component: EventBus
+    },
+    {
+      path: '/propsandemit',
+      component: PropsAndEmit
+    },
+    {
+      path: '/vuex',
+      component: Vx
+    },
+    {
+      path: '/simple',
+      component: Simple
     }
   ]
 })

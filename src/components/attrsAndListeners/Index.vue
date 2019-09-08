@@ -3,16 +3,16 @@
     <div>
       <h1>$attrs 和 $listeners</h1>
     </div>
-    <grand-father />
+    <grand-pa />
   </div>
 </template>
 
 <script>
-import GrandFather from './GrandFather'
+import GrandPa from './GrandPa'
 
 export default {
   components: {
-    GrandFather: GrandFather
+    GrandPa: GrandPa
   }
 }
 </script>

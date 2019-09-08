@@ -1,53 +1,38 @@
 <template>
   <div>
     <div class="demo-panel">
-      <h4 class="title">
-Father
-</h4>
+      <h4 class="title">Father</h4>
       <div>
-        <span>来自GrandFather的数据：{{ fatherMessage }}</span>
+        <span>来自GrandPa的数据：{{ grandPaMessage }}</span>
       </div>
       <div>
         <span>
-          <input type="text"
-v-model="fatherValue" >
-          <button type="button"
-@click="changeGrandPaValue()">触发修改父级属性值</button>
+          <input type="text" v-model="value" />
+          <button type="button" @click="changeGrandPaValue()" class="btn btn-default">修改GrandPa属性值</button>
         </span>
       </div>
-    </div>
-    <div class="row">
-      <child-a class="col-md-6" />
-      <child-b class="col-md-6" />
     </div>
   </div>
 </template>
 
 <script>
-import ChildA from './ChildA'
-import ChildB from './ChildB'
-
 export default {
-  components: {
-    ChildA: ChildA,
-    ChildB: ChildB
-  },
   props: ['message'],
   data() {
     return {
-      fatherMessage: this.message,
-      fatherValue: ''
+      grandPaMessage: this.message,
+      value: ''
     }
   },
   methods: {
     changeGrandPaValue() {
-      this.$emit('getChildData', this.fatherValue)
+      this.$emit('getFatherValue', this.value)
     }
   },
   // props默认不能同步父级组件的属性变化，需要增加watch才可以实现
   watch: {
     message(val) {
-      this.fatherMessage = val
+      this.grandPaMessage = val
     }
   }
 }

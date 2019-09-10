@@ -8,7 +8,10 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import GrandFather from './GrandFather'
+
+Vue.prototype.$EventBus = new Vue()
 
 export default {
   components: {

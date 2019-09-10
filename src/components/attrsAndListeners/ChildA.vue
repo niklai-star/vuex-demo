@@ -1,20 +1,11 @@
 <template>
   <div class="demo-panel">
-    <h4 class="title">
-      ChildA
-    </h4>
+    <h4 class="title">ChildA</h4>
     <div>来自GrandPa的数据：{{ grandPaMessage }}</div>
     <div>
       <span>
-        <input
-          type="text"
-          v-model="value"
-        >
-        <button
-          type="button"
-          @click="changeGrandPaValue()"
-          class="btn btn-default"
-        >修改GrandPa属性值</button>
+        <input type="text" v-model="value" />
+        <button type="button" @click="changeGrandPaValue()" class="btn btn-default">修改GrandPa</button>
       </span>
     </div>
   </div>

@@ -8,7 +8,7 @@
       <div>
         <span>
           <input type="text" v-model="value" />
-          <button type="button" @click="changeGrandPaValue()" class="btn btn-default">修改GrandPa属性值</button>
+          <button type="button" @click="changeGrandPaValue()" class="btn btn-default">修改GrandPa</button>
         </span>
       </div>
     </div>

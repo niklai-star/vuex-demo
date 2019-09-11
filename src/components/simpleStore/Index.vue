@@ -3,16 +3,16 @@
     <div>
       <h1>store 模式</h1>
     </div>
-    <grand-father />
+    <grand-pa />
   </div>
 </template>
 
 <script>
-import GrandFather from './GrandFather'
+import GrandPa from './GrandPa'
 
 export default {
   components: {
-    GrandFather: GrandFather
+    GrandPa: GrandPa
   }
 }
 </script>

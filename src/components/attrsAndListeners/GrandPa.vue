@@ -6,10 +6,7 @@
       </h4>
       <div>
         <span>输入框：</span>
-        <input
-          type="text"
-          v-model="inputValue"
-        >
+        <input type="text" v-model="inputValue" />
       </div>
       <div>来自Father的数据：{{ fatherValue }}</div>
       <div>来自ChildA的数据：{{ childAValue }}</div>
@@ -32,7 +29,7 @@ export default {
   },
   data() {
     return {
-      inputValue: 'abc',
+      inputValue: '',
       fatherValue: '',
       childAValue: ''
     }

@@ -3,19 +3,19 @@
     <div>
       <h1>EventBus</h1>
     </div>
-    <grand-father />
+    <grand-pa />
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
-import GrandFather from './GrandFather'
+import GrandPa from './GrandPa'
 
 Vue.prototype.$EventBus = new Vue()
 
 export default {
   components: {
-    GrandFather: GrandFather
+    GrandPa: GrandPa
   }
 }
 </script>

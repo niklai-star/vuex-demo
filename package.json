@@ -60,10 +60,9 @@
           "singleQuote": true,
           "trailingComma": "none",
           "bracketSpacing": true,
-          "jsxBracketSameLine": true,
           "semi": false,
           "tabWidth": 2,
-          "parser": "flow"
+          "quoteProps": "as-needed"
         }
       ]
     },

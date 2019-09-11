@@ -6,13 +6,25 @@
     <div>
       <span>
         <input type="text" v-model="value" />
-        <button type="button" @click="changeGrandPaValue()" class="btn btn-default">修改GrandPa</button>
+        <button
+          type="button"
+          @click="changeGrandPaValue()"
+          class="btn btn-default"
+        >
+          修改GrandPa
+        </button>
       </span>
     </div>
     <div>
       <span>
         <input type="text" v-model="valueToA" />
-        <button type="button" @click="changeChildAValue()" class="btn btn-default">修改ChildA</button>
+        <button
+          type="button"
+          @click="changeChildAValue()"
+          class="btn btn-default"
+        >
+          修改ChildA
+        </button>
       </span>
     </div>
   </div>
@@ -33,17 +45,17 @@ export default {
       this.grandPaValue = val
     })
 
-    this.$EventBus.$on('changeChildBValueFromChildA', val => {
+    this.$EventBus.$on('changeChildAValue', val => {
       this.childAValue = val
     })
   },
   methods: {
     changeGrandPaValue() {
-      this.$EventBus.$emit('changeGrandPaValueFromChild', this.value)
+      this.$EventBus.$emit('changeChildValue', this.value)
     },
 
     changeChildAValue() {
-      this.$EventBus.$emit('changeChildAValueFromChildB', this.valueToA)
+      this.$EventBus.$emit('changeChildBValue', this.valueToA)
     }
   }
 }

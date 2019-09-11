@@ -6,7 +6,13 @@
       <div>
         <span>
           <input type="text" v-model="value" />
-          <button type="button" @click="changeGrandPaValue()" class="btn btn-default">修改GrandPa</button>
+          <button
+            type="button"
+            @click="changeFatherValue()"
+            class="btn btn-default"
+          >
+            修改GrandPa
+          </button>
         </span>
       </div>
     </div>
@@ -34,7 +40,7 @@ export default {
     }
   },
   methods: {
-    changeGrandPaValue() {
+    changeFatherValue() {
       this.$emit('getFatherValue', this.value)
     }
   },
